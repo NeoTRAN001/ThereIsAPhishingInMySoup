@@ -23,7 +23,7 @@
 
 <p align="center">
 <a href="https://asciinema.org/a/223115">
-<img src="./images/sherlock_preview.gif"/>
+<img src="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup/blob/master/Data/img/Title.png"/>
 </a>
 </p>
 
