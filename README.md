@@ -49,7 +49,7 @@ $ cd ThereIsAPhishingInMySoup
 $ python3 -m pip install -r requirements.txt
 ```
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup=README.md)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup&tutorial=README.md)
 
 ## Usage
 
