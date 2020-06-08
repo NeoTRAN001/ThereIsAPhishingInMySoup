@@ -38,10 +38,10 @@ https://elody.com/scenario/plan/16/
 
 ```bash
 # clone the repo
-$ git clone https://github.com/sherlock-project/sherlock.git
+$ git clone https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup.git
 
 # change the working directory to sherlock
-$ cd sherlock
+$ cd ThereIsAPhishingInMySoup
 
 # install python3 and python3-pip if they are not installed
 
@@ -49,7 +49,7 @@ $ cd sherlock
 $ python3 -m pip install -r requirements.txt
 ```
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/sherlock-project/sherlock&tutorial=README.md)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup=README.md)
 
 ## Usage
 
