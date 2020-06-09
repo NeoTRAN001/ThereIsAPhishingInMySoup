@@ -52,69 +52,27 @@ $ python3 -m pip install -r requirements.txt
 ## Usage
 
 ```bash
-$ python3 sherlock --help
-usage: sherlock [-h] [--version] [--verbose] [--rank]
-                [--folderoutput FOLDEROUTPUT] [--output OUTPUT] [--tor]
-                [--unique-tor] [--csv] [--site SITE_NAME] [--proxy PROXY_URL]
-                [--json JSON_FILE] [--timeout TIMEOUT] [--print-found]
-                [--no-color] [--browse]
-                USERNAMES [USERNAMES ...]
+$ python3 my_soup.py --help
 
-Sherlock: Find Usernames Across Social Networks (Version 0.12.2)
+Options:
+  -s, --scam TEXT      Web template name.   python my_soup.py -s Name
+  -p, --password TEXT  View action history. python my_soup.py -p True
+  -i, --info TEXT      View info tools.     python my_soup.py -i True
+  --help               Show this message and exit.
 
-positional arguments:
-  USERNAMES             One or more usernames to check with social networks.
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --version             Display version information and dependencies.
-  --verbose, -v, -d, --debug
-                        Display extra debugging information and metrics.
-  --rank, -r            Present websites ordered by their Alexa.com global
-                        rank in popularity.
-  --folderoutput FOLDEROUTPUT, -fo FOLDEROUTPUT
-                        If using multiple usernames, the output of the results
-                        will be saved to this folder.
-  --output OUTPUT, -o OUTPUT
-                        If using single username, the output of the result
-                        will be saved to this file.
-  --tor, -t             Make requests over Tor; increases runtime; requires
-                        Tor to be installed and in system path.
-  --unique-tor, -u      Make requests over Tor with new Tor circuit after each
-                        request; increases runtime; requires Tor to be
-                        installed and in system path.
-  --csv                 Create Comma-Separated Values (CSV) File.
-  --site SITE_NAME      Limit analysis to just the listed sites. Add multiple
-                        options to specify more than one site.
-  --proxy PROXY_URL, -p PROXY_URL
-                        Make requests over a proxy. e.g.
-                        socks5://127.0.0.1:1080
-  --json JSON_FILE, -j JSON_FILE
-                        Load data from a JSON file or an online, valid, JSON
-                        file.
-  --timeout TIMEOUT     Time (in seconds) to wait for response to requests.
-                        Default timeout of 60.0s.A longer timeout will be more
-                        likely to get results from slow sites.On the other
-                        hand, this may cause a long delay to gather all
-                        results.
-  --print-found         Do not output sites where the username was not found.
-  --no-color            Don't color terminal output
-  --browse, -b          Browse to all results on default bowser.
 ```
 
-To search for only one user:
+To see all web templates:
 ```
-python3 sherlock user123
-```
-
-To search for more than one user:
-```
-python3 sherlock user1 user2 user3
+python3 my_soup.py
 ```
 
-Accounts found will be stored in an individual text file with the corresponding username (e.g ```user123.txt```).
+Use a single web template:
+```
+python3 my_soup.py --scam NAME 
+```
 
 ## License
 
 MIT © Sherlock Project<br/>
-Original Creator - [Siddharth Dushantha](https://github.com/sdushantha)
+Original Creator - [Neo TRAN](https://github.com/NeoTRAN001)
