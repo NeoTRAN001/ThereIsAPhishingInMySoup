@@ -28,7 +28,7 @@
 
 ## Legal disclaimer
 
-Usage of BlackEye for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program. Only use for educational purposes.
+Usage of ThereIsAPhishingInMySoup for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program. Only use for educational purposes.
 
 ## Installation
 
@@ -74,5 +74,5 @@ python3 my_soup.py --scam NAME
 
 ## License
 
-MIT © Sherlock Project<br/>
+MIT © ThereIsAPhishingInMySoup<br/>
 Original Creator - [Neo TRAN](https://github.com/NeoTRAN001)
