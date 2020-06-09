@@ -6,7 +6,7 @@ BANNER = """
        /'_/\_ /_.   './     \033[89m╠═╣  ├─┘├─┤│└─┐├─┤│││││ ┬  \033[0m
       ;._ `/ ``      |      \033[89m╩ ╩  ┴  ┴ ┴┴└─┘┴ ┴┴┘└┘└─┘\033[0m
       |^ '-;._   _.' |          \033[0;38;5;172m╦ ┌┐┌  ┌┬┐┬ ┬  ╔═╗╔═╗╦ ╦╔═╗\033[0m
-      |^ ^  ||```    |          \033[89m║ │││  │││└┬┘  ╚═╗║ ║║ ║╠═╝\033[0m   \033[0;38;5;29mV: 0.1.2\033[0m
+      |^ ^  ||```    |          \033[89m║ │││  │││└┬┘  ╚═╗║ ║║ ║╠═╝\033[0m   \033[0;38;5;29mV: 0.1.3\033[0m
     .'| ^  ^||       |          \033[89m╩ ┘└┘  ┴ ┴ ┴   ╚═╝╚═╝╚═╝╩    \033[0m\033[0;38;5;29m     2020\033[0m
    `'`|^ ^ ^|\__,.--;'      \033[91m_________________ By Neo __________________\033[0m
       | ^ ^ | |     |       \033[94m[01]\033[0m Amino      \033[94m[08]\033[0m Instagram  \033[94m[15]\033[0m Twitter
@@ -34,7 +34,7 @@ INFO = """
 ||||||||/ \033[0;38;5;33m~`    ~    `o ~\033[0;38;5;73m¿\033[0;38;5;33m   .  -    ^   ~~`  ´ ' ~   `o ~\033[0m
           \033[0;38;5;33m~`    ~    `o ~'. ~   -  `  ~~`  ´ ' ~   `o ~~`  ´ ' ~  .-  ^  ~\033[0m
    
-  \033[0;38;5;94mThere is phishing in my soup, it is a tool created with python3 using 
+  \033[0;38;5;94mThere is a phishing in my soup, it is a tool created with python3 using 
   the flask for the web server, and click to receive flags by terminal.
   With an academic objective, the creator of the software is not responsible
   for the misuse that may be given.
