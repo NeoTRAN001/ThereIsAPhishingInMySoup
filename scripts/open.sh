@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-ADDRESS="$1.localhost.run"
+ADDRESS="$1@ssh.localhost.run"
 PORT="80:localhost:$2"
 SERVER="python3 ./scripts/server.py -s $1 -p $2"
 
