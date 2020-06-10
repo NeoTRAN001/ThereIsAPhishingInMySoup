@@ -3,11 +3,11 @@
   <img src="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup/blob/master/Data/img/logo.png"/>
 
   <br>
-  <span>There is a phishing in my soup, it is a scam tool with <a href="https://github.com/theyahya/sherlock/blob/master/sites.md">phishing</a></span>
+  <span>There is a phishing in my soup, it is a scam tool with <a href="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup">phishing</a></span>
   <br><br>
-  <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/python-%3E=_3.6-green.svg"></a>
-  <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
-  <a target="_blank" href="/"><img alt="docker image" src="https://images.microbadger.com/badges/version/theyahya/sherlock.svg"></a>
+  <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup/blob/master/Data/img/python-_%3D_3.6-green.svg"></a>
+  <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup/blob/master/Data/img/License-MIT-blue.svg"></a>
+  <a target="_blank" href="/"><img alt="docker image" src="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup/blob/master/Data/img/version.png"></a>
 </p>
 
 <p align="center">
