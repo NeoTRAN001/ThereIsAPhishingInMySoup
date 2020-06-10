@@ -51,6 +51,12 @@ $ python3 -m pip install -r requirements.txt
 ## Usage
 
 ```bash
+$ python3 my_soup.py
+```
+
+or
+
+```bash
 $ python3 my_soup.py --help
 
 Options:
