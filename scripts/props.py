@@ -29,7 +29,8 @@ LOCALHOSTRUN = """
  _  ||     || |^*| _        \033[0;38;5;112mResult: https://test.localhost.run\033[0m
 |=| o=,===,=o |__||=|       \033[0;38;5;112mCompatible con terminales:        Konsole\033[0m
 |_|  _______)~`)  |_|                                         \033[0;38;5;112mxterm\033[0m
-    [=======]  ()                                             \033[0;38;5;112mxfterminal\033[0m
+    [=======]  ()                                             \033[0;38;5;112mtilix\033[0m
+                                                              \033[0;38;5;112mtmux\033[0m
 """
 
 
