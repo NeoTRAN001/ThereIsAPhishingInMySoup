@@ -25,8 +25,8 @@ def main(scam, password, info):
         port = props.port()
         subdomain = props.localhost_run()
 
-        if (subdomain != None):
-            subprocess.call(['bash', './scripts/open.sh', option, port, subdomain])
+        if (subdomain):
+            subprocess.call(['bash', './scripts/open.sh', option, port])
         
         else:
             subprocess.call(['python3', './scripts/server.py', '-s', option, '-p', port])
