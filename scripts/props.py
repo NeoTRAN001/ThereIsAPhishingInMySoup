@@ -79,6 +79,6 @@ def localhost_run():
   op = input('\033[0;38;5;172mDo you want to generate a subdomain with localhost.run? y/n: \033[0m')
 
   if (op == 'y' or op == 'Y'):
-    return input('\033[0;38;5;172m\nEnter name: \033[0m')
+    return True
   
-  return None
+  return False
