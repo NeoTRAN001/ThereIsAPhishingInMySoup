@@ -3,21 +3,18 @@
 
 ADDRESS="$1@ssh.localhost.run"
 PORT="80:localhost:$2"
-SERVER="python3 ./scripts/server.py -s $1 -p $2"
-
-echo $ADDRESS
-echo $PORT
+SERVER="python3 ./server.py -t $1 -p $2"
 
 { # try
-    tmux new -s MySoup -n:dev "tmux new-window -n:server '$SERVER' | tmux split 'ssh -R $PORT $ADDRESS'"
+    xterm -e ssh -R $PORT $ADDRESS |
+    xterm -e $SERVER
 } || { # catch
     { 
         tilix -a session-add-down -e ssh -R $PORT $ADDRESS |
         tilix -a session-add-right -e $SERVER
     } || {
         {
-            xterm -e ssh -R $PORT $ADDRESS &
-            xterm -e $SERVER
+            tmux new -s MySoup -n:dev "tmux new-window -n:server '$SERVER' | tmux split 'ssh -R $PORT $ADDRESS'"
         } || {
             {
                 konsole --noclose -e ssh -R $PORT $ADDRESS &
