@@ -54,10 +54,10 @@ class Server:
         return render_template(f"{template}/index.html")
 
 @click.command() # Initialize flag values
-@click.option("--scam",  '-s', default="Amino")
+@click.option("--template",  '-t', default="Amino")
 @click.option("--port",  '-p', default="5000"  )
-def main(scam, port):
-    Server(scam).app.run(debug=False, port=port)
+def main(template, port):
+    Server(template).app.run(debug=False, port=port)
 
 if __name__ == '__main__':
     main()
