@@ -60,7 +60,7 @@ or
 $ python3 my_soup.py --help
 
 Options:
-  -s, --scam TEXT      Web template name.   python my_soup.py -s Name
+  -t, --template TEXT  Web template name.   python my_soup.py -t Name
   -p, --password TEXT  View action history. python my_soup.py -p True
   -i, --info TEXT      View info tools.     python my_soup.py -i True
   --help               Show this message and exit.
