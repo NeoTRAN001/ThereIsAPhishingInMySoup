@@ -57,7 +57,7 @@ class Server:
 @click.option("--template",  '-t', default="Amino")
 @click.option("--port",  '-p', default="5000"  )
 def main(template, port):
-    Server(template).app.run(debug=False, port=port)
+    Server(template).app.run(debug=True, port=port)
 
 if __name__ == '__main__':
     main()
