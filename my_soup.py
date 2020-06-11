@@ -3,16 +3,16 @@ import subprocess
 from scripts import props
 
 @click.command()
-@click.option("--scam"    , '-s', default="None" , 
-                help="Web template name.   \033[92mpython my_soup.py -s Name\033[0m")
+@click.option("--template", '-t', default="None" , 
+                help="Web template name.   \033[92mpython my_soup.py -t Name\n\033[0m")
 @click.option("--password", '-p', default=False,  
-                help="View action history. \033[92mpython my_soup.py -p True\033[0m")
+                help="View action history. \033[92mpython my_soup.py -p True\n\033[0m")
 @click.option("--info",     '-i', default=False,
-                help="View info tools.     \033[92mpython my_soup.py -i True\033[0m")
+                help="View info tools.     \033[92mpython my_soup.py -i True\n\033[0m")
 
-def main(scam, password, info):
-    if (scam != "None"):
-        subprocess.call(['python3', './scripts/server.py', '--scam', scam])
+def main(template, password, info):
+    if (template != "None"):
+        subprocess.call(['python3', './server.py', '-t', template, '-p', "8080"])
 
     elif (password):
         print("In construction")
@@ -29,7 +29,7 @@ def main(scam, password, info):
             subprocess.call(['bash', './scripts/open.sh', option, port])
         
         else:
-            subprocess.call(['python3', './scripts/server.py', '-s', option, '-p', port])
+            subprocess.call(['python3', './server.py', '-t', option, '-p', port])
 
 
 if __name__ == "__main__":
