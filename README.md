@@ -74,7 +74,7 @@ python3 my_soup.py
 
 Use a single web template:
 ```
-python3 my_soup.py --scam NAME 
+python3 my_soup.py --template NAME 
 ```
 
 ## License
