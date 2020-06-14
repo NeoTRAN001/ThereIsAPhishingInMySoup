@@ -6,15 +6,15 @@ PORT="80:localhost:$2"
 SERVER="python3 ./server.py -t $1 -p $2"
 
 { # try
-    xterm -e ssh -R $PORT $ADDRESS |
-    xterm -e $SERVER
+    tmux new -s MySoup -n:dev "tmux new-window -n:server '$SERVER' | tmux split 'ssh -R $PORT $ADDRESS'"
 } || { # catch
     { 
         tilix -a session-add-down -e ssh -R $PORT $ADDRESS |
         tilix -a session-add-right -e $SERVER
     } || {
         {
-            tmux new -s MySoup -n:dev "tmux new-window -n:server '$SERVER' | tmux split 'ssh -R $PORT $ADDRESS'"
+            xterm -e ssh -R $PORT $ADDRESS |
+            xterm -e $SERVER
         } || {
             {
                 konsole --noclose -e ssh -R $PORT $ADDRESS &
