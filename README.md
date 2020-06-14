@@ -41,6 +41,7 @@ $ git clone https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup.git
 $ cd ThereIsAPhishingInMySoup
 
 # install python3 and python3-pip if they are not installed
+# It is recommended to have tmux installed, or another compatible terminal
 
 # install the requirements
 $ python3 -m pip install -r requirements.txt
