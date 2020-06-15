@@ -10,7 +10,7 @@ BANNER = """
     .'| ^  ^||       |          \033[89m╩ ┘└┘  ┴ ┴ ┴   ╚═╝╚═╝╚═╝╩    \033[0m\033[0;38;5;29m     2020\033[0m
    `'`|^ ^ ^|\__,.--;'      \033[91m_________________ By Neo __________________\033[0m
       | ^ ^ | |     |       \033[94m[01]\033[0;38;5;240m Amino      \033[94m[08]\033[0m Instagram  \033[94m[15]\033[0m Twitter
-      ;^ ^ ^; |     /       \033[94m[02]\033[0;38;5;240m BBVA       \033[94m[09]\033[0;38;5;240m Lichess    \033[94m[16]\033[0;38;5;240m TikTok\033[0m
+      ;^ ^ ^; |     /       \033[94m[02]\033[0;38;5;240m BBVA       \033[94m[09]\033[0m Lichess    \033[94m[16]\033[0;38;5;240m TikTok\033[0m
        \^ ^/\)|    |        \033[94m[03]\033[0m Chess      \033[94m[10]\033[0;38;5;240m Microsoft  \033[94m[17]\033[0;38;5;240m Udemy\033[0m
         | ^|  |    |        \033[94m[04]\033[0;38;5;240m Disney+    \033[94m[11]\033[0m Netflix    \033[94m[18]\033[0;38;5;240m Volaris\033[0m
        /'-'\  \_   |        \033[94m[05]\033[0;38;5;240m EpicGames  \033[94m[12]\033[0;38;5;240m Outlook    \033[94m[19]\033[0;38;5;240m Wattpad\033[0m
@@ -56,7 +56,7 @@ INFO = """
 
 OPTIONS = ['Help','Amino', 'BBVA', 'Chess', 'Disney', 'EpicGames', 'Facebook', 'Gmail',
           'Instagram', 'Lichess', 'Microsoft', 'Netflix', 'Outlook', 'Platzi', 'Reddit'
-          ,'Twitter']
+          ,'Twitter', 'TikTok', 'Udemy', 'Volaris', 'Wattpad', 'Yahoo', 'Zoom']
 
 # Function:
 def banner():
