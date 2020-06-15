@@ -46,10 +46,14 @@ class Server:
     @app.route('/login', methods=['POST'])
     def get_login():
         global template
-        email = request.form['email']
-        password = request.form['password']
+        try:
+            email = request.form['email']
+            password = request.form['password']
 
-        props.show_data(email, password)
+            props.show_data(email, password)
+
+        except:
+            print('Nada')
 
         return render_template(f"{template}/index.html")
 
