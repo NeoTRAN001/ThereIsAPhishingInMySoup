@@ -1,0 +1,1001 @@
+
+<!doctype html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en-US" >
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# zoomvideocall: http://ogp.me/ns/fb/zoomvideocall#">
+<title>Sign In - Zoom</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="shortcut icon" href="https://d24cgw3uvb9a9h.cloudfront.net/zoom.ico" />
+<link rel="canonical" href="https://zoom.us/" />
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kgjfgplpablkjnlkjmjdecgdpfankdle" />
+<script type="text/javascript">
+var resourceAccountIdRoutingURl = "";
+resourceAccountIdRoutingURl = resourceAccountIdRoutingURl==""?undefined:resourceAccountIdRoutingURl;
+</script>
+<script type="text/javascript">
+if (top != window) {
+top.location.href = 'https://zoom.us/';
+}
+</script>
+<link type="text/css" rel="stylesheet" href="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/css/all.min.css" />
+<link type="text/css" rel="stylesheet" href="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/css/signin.min.css" />
+<style>
+.email-label{
+display: block;
+}
+.link-signin-with-other{
+display: none;
+}
+.re-captcha .captcha-section{
+min-height: 40px;
+float: right;
+}
+.re-captcha .captcha-action{
+margin: 0;
+}
+.re-captcha .captcha-code .captcha-input{
+width: calc(100% - 170px);
+}
+.captcha-code-level .captcha-input > input{
+width: 100%;
+}
+@media screen and (max-width: 767px){
+.link-signin-with-other{
+display: block
+}
+}
+#confirmSendLoginDetailDialog .captcha-code .captcha-input{
+width: calc(100% - 180px);
+}
+#confirmSendLoginDetailDialog.modal-dialog {
+width: 360px !important;
+}
+#confirmSendLoginDetailDialog .controls{
+margin-top: 10px;
+text-align: center;
+padding-left:25px;
+padding-right:25px;
+}
+#confirmSendLoginDetailDialog .modal-header {
+border-bottom: none;
+padding: 5px;
+}
+#confirmSendLoginDetailDialog .modal-body {
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+padding-left:30px;
+padding-top:32px;
+margin-bottom: 0;
+}
+#confirmSendLoginDetailDialog .recaptcha-policy {
+text-align: center;
+}
+#sendLoginDetailMailForm .g-recaptcha > div{
+margin-left: auto;
+margin-right: auto;
+}
+@media (max-width: 767px) {
+#confirmSendLoginDetailDialog .modal-dialog {
+width: 100%;
+}
+}
+.captcha-input {
+display: inline-block;
+float: left;
+margin-right: 10px;
+height: 50px;
+width: 120px;
+}
+.captcha-input > .has-error {
+position: absolute;
+}
+.captcha-input > input {
+padding-left: 12px;
+height: 35px;
+height: 100%;
+}
+.captcha-display {
+height:48px;
+width: 200px;
+margin-left: 4px;
+display:inline-block;
+}
+.captcha-section {
+border: 1px solid #dcdcdc;
+position: relative;
+width:230px;
+background:rgb(242,242,247);
+border-radius: 8px;
+display: inline-block;
+}
+.captcha-action {
+max-width: 24px;
+display:inline-block;
+}
+.play_link {
+margin-top:13px;
+position:absolute;
+left: 20px;
+text-decoration: none;
+color: #777;
+}
+.captcha-section > div {
+float:left;
+}
+.captcha-action > a {
+display: inline-block;
+}
+.captcha-icon {
+height: 24px;
+width: 24px;
+display: inline-block;
+background: transparent url(https://d24cgw3uvb9a9h.cloudfront.net/static/93994/image/new/postattendee/captcha-sprites.png) no-repeat scroll 0 0;
+vertical-align: middle;
+background-size: 192px;
+}
+.icon-refresh {
+background-position: 0 0;
+}
+.icon-refresh:hover, #captcha-refresh:focus .icon-refresh {
+background-position: -24px 0;
+}
+.icon-switch-txt {
+background-position: -48px 0;
+}
+.icon-switch-txt:hover, #captcha-switch:focus .icon-switch-txt {
+background-position: -72px 0;
+}
+.icon-switch-auo {
+background-position: -96px 0 !important;
+}
+.icon-switch-auo:hover, #captcha-switch:focus .icon-switch-auo {
+background-position: -120px 0 !important;
+}
+.icon-play {
+background-position: -144px 0;
+}
+.icon-play:hover {
+background-position: -168px 0;
+}
+.play_link:hover, .play_link:focus {
+text-decoration: none;
+color: #2073d9;
+}
+.play_link:hover .icon-play, .play_link:focus .icon-play {
+background-position: -168px 0;
+}
+</style>
+<style>
+body div.combobox div.dropdownlist{
+width: calc(100% + 2px) !important;
+}
+</style>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+'country': 'mx'
+});
+//ZOOM-163677
+window.sctyName = '{\"TW\":\"country.TW-TW\",\"CN\":\"country.CN\"}';
+</script>
+<link rel="stylesheet" href="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/js/lib/vue/advanced/notification/notification.min.css">
+<link rel="stylesheet" type="text/css" href="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/css/vue/zoom-components.min.css"/>
+</head>
+<body class="    " data-cd=".zoom.us">
+<div class="total-main-content">
+<div id="skiptocontent">
+<a role="complementary" aria-label="skip" href="#the-main-content">Skip to main content</a>
+</div>
+<div id="header_container" class="   zoom-newhd">
+<div id="header_outer" class="container clearfix  zoom-newhd">
+<div id="header" class="navbar navbar-default navbar-fixed-top">
+<div id="black-topbar" class="hidden-xs noanimate" role="navigation" aria-label="Resources">
+<div class="container" role="menubar">
+<ul class="list-inline pull-right" role="menubar">
+<li role="none">
+<a
+role="menuitem"
+href="https://zoom.us/livedemo"
+
+onClick="ga('send', 'event', 'requestdemo', 'click-nav-requestademo', 'Header Nav Contact Sales');">
+Request a Demo</a>
+</li>
+<li role="none">
+<a
+role="menuitem"
+href="tel:1.888.799.9666"
+class="support-phone"
+onClick="ga('send', 'event', 'contact', 'click-homepage-phone-number', 'Click Homepage Phone Number');">
+1.888.799.9666
+</a>
+</li>
+<li role="none" class="dropdown" id="resources" aria-haspopup="true">
+<a id="btnResouces" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Resources <span class="caret"></span></a>
+<ul id="resourcesDropdown" class="dropdown-menu">
+<li role="none"><a role="menuitem" href="https://zoom.us/download#client_4meeting" onClick="">Download Zoom Client</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://support.zoom.us/hc/en-us/articles/206618765-Zoom-Video-Tutorials" onClick="">Video Tutorials</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/livetraining" onClick="">Live Training</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/events" onClick="">Webinars and Events</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://blog.zoom.us/" onClick="">Zoom Blog</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://support.zoom.us/hc/en-us/articles/206175806-Top-Questions" onClick="">FAQ</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="/docs/ent/privacy-and-security.html" onClick="">Privacy and Security</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="/security" onClick="">Security Resources</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="https://support.zoom.us/hc/en-us" target="_blank" onClick="ga('send', 'event', 'product', 'click-nav-support', 'Header Nav Support');">Support</a></li>
+</ul>
+</div>
+</div>
+<div class="container" role="banner">
+<div class="navbar-header ">
+<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button" value="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<ul class="list-inline pull-right visible-xs" style="line-height: 50px;">
+<li style="padding-right: 15px;"><a href="https://zoom.us/join" target="_blank">JOIN</a></li>
+<li style="padding-right: 15px;"><a id="mobile-host-btn" href="/start/videomeeting" target="_blank">HOST</a></li>
+</ul>
+<div class="left">
+<a class="imglink" href="https://zoom.us/">
+<img class="logo" src="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/image/new/ZoomLogo.png" alt="Zoom Logo"/>
+</a>
+</div>
+</div>
+<div>
+<div class="navbar-collapse collapse" id="navbar">
+<ul class="nav navbar-nav" role="navigation" aria-label="product information">
+<li class='visible-xs divider' role='presentation'></li>
+<li role="none" class='dropdown mobile-hide' id='solution' aria-haspopup='true'>
+<a id='btnSolutions' href='javascript:;' class='dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>SOLUTIONS <span class='caret'></span></a>
+<ul id='solutionsDropdown' class='dropdown-menu first-dropdown'>
+<li role="none" id="first-col-nav" class='mega-menu-4-of-12 first-col'>
+<h4 class='mega-block-title'>PRODUCTS</h4>
+<div class='textwidget'>
+<ul role="list">
+<li role="none">
+<a role="menuitem" href='https://zoom.us/meetings' onclick="ga('send', 'event', 'product', 'click-nav-solutions-meetings', 'Header Nav Solutions Meetings and Chat');">
+<h3>Meetings and Chat</h3>
+<p>HD video, audio, collaboration & chat</p>
+</a>
+</li>
+<li role="none">
+<a role="menuitem" href='https://zoom.us/zoomrooms' onclick="ga('send', 'event', 'product', 'click-nav-solutions-rooms', 'Header Nav Solutions Rooms and Workspaces');">
+<h3>Rooms and Workspaces</h3>
+<p>Power up your conference rooms with video</p>
+</a>
+</li>
+<li role="none">
+<a role="menuitem" href='https://zoom.us/phonesystem' onclick="ga('send', 'event', 'product', 'click-nav-solutions-voice', 'Header Nav Solutions Voice');">
+<h3>Phone System</h3>
+<p>Enterprise cloud phone system</p>
+</a>
+</li>
+<li role="none">
+<a role="menuitem" href='https://zoom.us/webinar' onclick="ga('send', 'event', 'product', 'click-nav-solutions-webinar', 'Header Nav Solutions Webinars');">
+<h3>Video Webinars</h3>
+<p>Full-featured, easy-to-use, engaging webinars</p>
+</a>
+</li>
+<li role="none">
+<a role="menuitem" href='https://zoom.us/redirect_marketplace' onclick="ga('send', 'event', 'product', 'click-nav-solutions-appmarketplace', 'Header Nav Solutions App Marketplace');">
+<h3>App Marketplace</h3>
+<p>Integrations and bots to use with Zoom</p>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li role="none" id="second-col-nav" class='mega-menu-4-of-12 second-col'>
+<h4 class='mega-block-title'>INDUSTRIES</h4>
+<div class='textwidget'>
+<ul role="list">
+<li role="none">
+<a role="menuitem" href='https://zoom.us/education' onclick="ga('send', 'event', 'product', 'click-nav-industries-education', 'Header Nav Industries Education');">
+<h3>Education</h3>
+<p>Expand traditional classrooms in the cloud</p>
+</a>
+</li>
+<li role="none">
+<a role="menuitem" href='https://zoom.us/finance' onclick="ga('send', 'event', 'product', 'click-nav-industries-finance', 'Header Nav Industries Finance');">
+<h3>Finance</h3>
+<p>Improve customer experiences & communications</p>
+</a>
+</li>
+<li role="none">
+<a role="menuitem" href='https://zoom.us/government' onclick="ga('send', 'event', 'product', 'click-nav-industries-government', 'Header Nav Industries Government');">
+<h3>Government</h3>
+<p>Increase productivity & engagement for all agencies</p>
+</a>
+</li>
+<li role="none">
+<a role="menuitem" href='https://zoom.us/healthcare' onclick="ga('send', 'event', 'product', 'click-nav-industries-healthcare', 'Header Nav Industries Healthcare');">
+<h3>Healthcare</h3>
+<p>Enabling HIPAA-compliant telehealth technology & workflows</p>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li id="promo-col-nav" class='mega-menu-4-of-12 third-col nav-promo'>
+</li>
+</ul>
+</li>
+<li class="dropdown mobile-products" id="solution" aria-haspopup="true">
+<a id="btnSolutions" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">PRODUCTS <span class="caret"></span></a>
+<ul id="solutionsDropdown" class="dropdown-menu mobile-products-nav" style="">
+<li role="none"><a role="menuitem" href="https://zoom.us/meetings" onclick="ga('send', 'event', 'product', 'click-nav-solutions-meetings', 'Header Nav Solutions Meetings and Chat');">Meetings and Chat</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/zoomrooms" onclick="ga('send', 'event', 'product', 'click-nav-solutions-rooms', 'Header Nav Solutions Rooms and Workspaces');">Rooms and Workspaces</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/voice" onclick="ga('send', 'event', 'product', 'click-nav-solutions-voice', 'Header Nav Solutions Voice');">Phone System</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/webinar" onclick="ga('send', 'event', 'product', 'click-nav-solutions-webinar', 'Header Nav Solutions Webinars');">Video Webinars</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li><a role="menuitem" href="https://zoom.us/redirect_marketplace" onclick="ga('send', 'event', 'product', 'click-nav-solutions-appmarketplace', 'Header Nav Solutions App Marketplace');">App Marketplace</a></li>
+</ul>
+</li>
+<li class='visible-xs divider mobile-hide' role='presentation'></li>
+<li role="none" class="dropdown mobile-industries" id="solution" aria-haspopup="true">
+<a id="btnSolutions" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">INDUSTRIES <span class="caret"></span></a>
+<ul id="solutionsDropdown" class="dropdown-menu" style="">
+<li role="none"><a role="menuitem" href="https://zoom.us/education" onclick="ga('send', 'event', 'product', 'click-nav-industries-education', 'Header Nav Industries Education');">Education</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/finance" onclick="ga('send', 'event', 'product', 'click-nav-industries-finance', 'Header Nav Industries Finance');">Finance</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/government" onclick="ga('send', 'event', 'product', 'click-nav-industries-government', 'Header Nav Industries Government');">Government</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/healthcare" onclick="ga('send', 'event', 'product', 'click-nav-industries-healthcare', 'Header Nav Industries Healthcare');">Healthcare</a></li>
+</ul>
+</li>
+<li class='visible-xs divider' role='presentation'></li>
+<li role="none"><a role="menuitem" class='top-pricing' style='text-transform : uppercase;' href='/pricing' >Plans & Pricing</a></li>
+<li class='visible-xs divider' role='presentation'></li>
+<li role="none"><a role="menuitem" class='top-contactsales top-sales' style='text-transform : uppercase;' href="https://zoom.us/contactsales" >Contact Sales</a></li>
+<li class='visible-xs divider' role='presentation'></li>
+</ul>
+<ul class="nav navbar-nav navbar-right" role="navigation" aria-label="meetings">
+<li role="none"><a role="menuitem" id="btnJoinMeeting" tracking-id="headerMenuJoin" tracking-category="NavHeader" class="hidden-xs" href="https://zoom.us/join" class="joinameeting light" onClick="ga('send', 'event', 'product', 'click-nav-joinmeeting', 'Header Nav Join a Meeting');">JOIN A MEETING</a></li>
+<li role="none">
+<div id="dropdown-hostmeeting" class="dropdown hidden-xs" aria-haspopup="true">
+<a id="btnHostMeeting" data-toggle="dropdown" href="javascript:;" class="hostmeeting" aria-expanded="false" onClick="ga('send', 'event', 'product', 'click-nav-hostmeeting', 'Header Nav Host a Meeting');">HOST A MEETING <span class="caret"></span></a>
+<ul id="hostMeetingDropdown" class="dropdown-menu">
+<li role="none">
+<a role="menuitem" tracking-id="headerMenuHostVideoOFF" tracking-category="NavHeader" href="/start/webmeeting">
+With Video Off</a>
+</li>
+<li role="none">
+<a role="menuitem" tracking-id="headerMenuHostVideoON" tracking-category="NavHeader" href="/start/videomeeting">
+With Video On</a>
+</li>
+<li role="none">
+<a role="menuitem" tracking-id="headerMenuScreenShare" tracking-category="NavHeader" href="/start/sharemeeting">
+Screen Share Only</a>
+</li>
+</ul>
+</div>
+</li>
+<li role="none">
+<ul class="nav navbar-nav visible-xs" role="menubar">
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://zoom.us/livedemo" onClick="ga('send', 'event', 'requestdemo', 'click-nav-requestademo', 'Header Nav Contact Sales');">Request a Demo</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://support.zoom.us/hc/en-us/articles/206175806-Top-Questions" target="_blank" onClick="ga('send', 'event', 'product', 'click-nav-FAQ', 'Header Nav FAQ');">FAQ</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="https://support.zoom.us/hc/en-us" target="_blank" onClick="ga('send', 'event', 'product', 'click-nav-support', 'Header Nav Support');">Support</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li role="none"><a role="menuitem" href="tel:1.888.799.9666" class="support-phone" onClick="ga('send', 'event', 'contact', 'click-homepage-phone-number', 'Click Homepage Phone Number');"><span class="mobile-phone"></span>1.888.799.9666</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="header_login" class="hideme">
+<ul>
+<li class="visible-xs divider" role="presentation"></li>
+<li class="signin"><a class="link" href="https://zoom.us/" onClick="ga('send', 'event', 'product', 'click-nav-signin', 'Header Nav Sign In');">SIGN IN</a></li>
+<li class="visible-xs divider" role="presentation"></li>
+<li><div id="signupfree" class="hidden-xs"><a class="btn cta-bgyellow signupfree" role="button" href="/" onClick="ga('send', 'event', 'freesignup', 'click-nav-signupfree', 'Header Nav Sign up Free');">SIGN UP, IT'S FREE</a></div></li>
+<li><a class="visible-xs" href="/" onClick="ga('send', 'event', 'freesignup', 'click-nav-signupfree', 'Header Nav Sign up Free');">SIGN UP, IT'S FREE</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="content_container" class="zoom-newcontent ">
+<div id="content_success_msg" role="alert" aria-live="assertive" class="alert alert-success hideme zoom-newmessage"></div>
+<div id="content" class="main-content">
+<div id="notice-slot"></div>
+<div class="mini-layout" id="login">
+<div class="mini-layout-body">
+<div class="page-header">
+<h1>Sign In</h1>
+</div>
+<div class="">
+<div class="form">
+<div id="error_msg" class="alert alert-danger alert-dismissible hideme" role="alert"></div>
+<div id="error_user_not_exist" class="hideme">
+Wrong user name or password. Try signing in again.</div>
+<div id="error_email_wrong" class="hideme">
+for account information and next steps.</div>
+
+<form id="" action="/" method="POST" autocomplete="off" class="">
+<div class="form-group">
+<div class="controls">
+<label for="email" class="email-label">
+Email Address</label>
+<input
+type="email"
+id="email"
+name="email"
+class="form-control input "
+autocomplete="new-email"
+maxlength="128"
+placeholder="Email Address"
+value=""/>
+</div>
+</div>
+<div class="form-group">
+<div class="controls">
+<label for="password" class="password-label">Password</label>
+<div class="form-item-flex-wrap">
+<input
+type="password"
+id="password"
+name="password"
+autocomplete="new-password"
+class="form-control input"
+maxlength="32"
+placeholder="Password" />
+<a class="position-button" href="https://zoom.us/forgot_password">Forgot password?</a>
+</div>
+</div>
+</div>
+<div class="form-group re-captcha">
+<div id="loginCaptcha" class="captcha-main-container">
+<style>
+.recaptcha-policy {
+color: #747487;
+font-size: 12px;
+margin:0 auto;
+}
+.grecaptcha-badge {
+visibility: hidden;
+}
+</style>
+<div class="captcha" data-type="recaptcha" style="display: none;">
+<div class="recaptcha-policy">Zoom is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms"  target="_blank">Terms of Service</a> apply.</div>
+<div class="g-recaptcha"></div>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="controls">
+<div class="signin">
+<input type="submit" class="btn btn-primary signin user" value="Sign In">
+<i class="busy busy24" style="display:none;"></i>
+</div>
+<div class="forgot">
+<div class="left ">
+<label class="checkbox">
+<input type="checkbox" id="keep_me_signin" name="keep_me_signin" checked="checked" />
+Stay signed in</label>
+</div>
+<div class="right">
+New to Zoom? <a href="/">Sign Up Free</a></div>
+</div>
+</div>
+</div>
+</form>
+<div class="form-group">
+<p class="ride-line"><span>or</span></p>
+<a class="login-btn login-btn-sso" href="/web/sso/login?en=signin">
+Sign in with SSO</a>
+<a class="login-btn login-btn-google" href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&amp;access_type=offline&amp;client_id=849883241272-ed6lnodi1grnoomiuknqkq2rbvd2udku.apps.googleusercontent.com&amp;scope=profile%20email&amp;redirect_uri=https%3A%2F%2Fzoom.us%2Fgoogle%2Foauth&amp;state=https%3A%2F%2Fzoom.us%2Fgoogle%2Foauth">
+Sign in with Google</a>
+<a class="login-btn login-btn-facebook" href="https://www.facebook.com/v3.2/dialog/oauth?response_type=code&amp;client_id=113289095462482&amp;scope=email%2Cpublic_profile&amp;redirect_uri=https%3A%2F%2Fzoom.us%2Ffacebook%2Foauth&amp;state=https%3A%2F%2Fzoom.us%2Ffacebook%2Foauth">
+Sign in with Facebook</a>
+<div class="">
+</div>
+<p style="text-align: center; color: #747487; font-size: 14px;" class="mgt-xl pdt-md">
+By signing in, I agree to the <a target="_blank" href="/privacy">Privacy Policy</a> and <a target="_blank" href="/terms">Terms of Service</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="confirmSendLoginDetailDialog" class="modal-dialog hideme">
+<div class="modal-content">
+<form id="sendLoginDetailMailForm" class="form-horizontal" action="/" autocomplete="off">
+<div class="modal-body">
+<div id="error_sendmail_msg" class="alert alert-danger hideme"></div>
+<div id="captchaContent" class="form-group" style="margin-bottom: 0px;">
+<div id="detailCaptcha" class="captcha-main-container">
+<input type="hidden" class="is_captcha_hide" value="false" />
+<style>
+.recaptcha-policy {
+color: #747487;
+font-size: 12px;
+margin:0 auto;
+}
+.grecaptcha-badge {
+visibility: hidden;
+}
+</style>
+<div class="captcha" data-type="recaptcha" style="display: none;">
+<div class="recaptcha-policy">Zoom is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms"  target="_blank">Terms of Service</a> apply.</div>
+<div class="g-recaptcha"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:0 32px 24px 32px;">
+<div class="controls">
+<button id="btnSignUpCancel" type="button" class="btn btn-default simplemodal-close">Cancel</button>
+<button id="btnContinue" type="button" class="btn btn-primary">Continue</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div id="video_dialog" role="alertdialog" class="noheaderfooterdialog modaldialog hideme">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<div class="modal-title"></div>
+<button class="close simplemodal-close" aria-label="close">&timestimes;</button>
+</div>
+<div class="modal-body">
+<div class="modal-body-container">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer_container"  role="contentinfo">
+<div class="">
+<div id="footer-new">
+<div class="footer-body">
+<div class="ft-nav">
+<div class="ft-about">
+<div class="h4" role="heading" aria-level="2"><a href="https://zoom.us/about">About</a></div>
+<ul>
+<li><a href="https://blog.zoom.us/" tracking-id="footerBlog" tracking-category="NavFooter">Zoom Blog</a></li>
+<li><a href="https://zoom.us/customer/all">Customers</a></li>
+<li><a href="https://zoom.us/team">Our Team</a></li>
+<li><a href="https://zoom.us/zoomisbetter">Why Zoom</a></li>
+<li><a href="https://zoom.us/feature">Features</a></li>
+<li><a href="https://zoom.us/careers">Careers</a></li>
+<li><a href="https://zoom.us/integrations">Integrations</a></li>
+<li><a href="https://zoom.us/partners">Partners</a></li>
+<li><a href="https://investors.zoom.us/">Investors</a></li>
+<li><a href="https://zoom.us/press">Press</a></li>
+<li><a href="https://zoom.us/media-kit">Media Kit</a></li>
+<li><a href="https://zoom.us/resources">How to Videos</a></li>
+<li><a href="https://zoom.us/brandguidelines">Brand Guidelines</a></li>
+</ul>
+</div>
+<div class="ft-download" style="">
+<div class="h4" role="heading" aria-level="2"><a href="https://zoom.us/download" tracking-id="footerDownload" tracking-category="NavFooter">Download</a></div>
+<ul>
+<li><a href="https://zoom.us/download#client_4meeting" tracking-id="footerDownloadClient" tracking-category="NavFooter">Meetings Client</a></li>
+<li><a href="https://zoom.us/download#chrome_ext" tracking-id="footerDownloadExtension" tracking-category="NavFooter">Browser Extension</a></li>
+<li><a href="https://zoom.us/download#client_iphone" tracking-id="footerDownloadiOS" tracking-category="NavFooter">iPhone/iPad App</a></li>
+<li><a href="https://zoom.us/download#mobile_app" tracking-id="footerDownloadAndroid" tracking-category="NavFooter">Android App</a></li>
+</ul>
+</div>
+<div class="ft-sales">
+<div class="h4" role="heading" aria-level="2"><a href="https://zoom.us/contactsales">Sales</a></div>
+<ul>
+<li><a href="tel:1.888.799.9666" class="support-phone">1.888.799.9666</a></li>
+<li><a href="https://zoom.us/contactsales">Contact Sales</a></li>
+<li><a href="https://zoom.us/pricing">Plans & Pricing</a></li>
+<li><a href="https://zoom.us/livedemo" tracking-id="footerRequestDemo" tracking-category="NavFooter">Request a Demo</a></li>
+<li><a href="https://zoom.us/events" tracking-id="footerWebinars" tracking-category="NavFooter">Webinars and Events</a></li>
+</ul>
+</div>
+<div class="ft-support">
+<div class="h4" role="heading" aria-level="2">
+<a href="https://support.zoom.us/hc/en-us" tracking-id="footerSupport" tracking-category="NavFooter" target="_blank">
+Support</a>
+</div>
+<ul>
+<li><a href="https://zoom.us/test">Test Zoom</a></li>
+<li><a href="https://zoom.us/account">Account</a></li>
+<li>
+<a href="https://support.zoom.us/hc/en-us" tracking-id="footerSupport2" tracking-category="NavFooter" target="_blank">
+Support Center</a>
+</li>
+<li><a href="https://zoom.us/livetraining" tracking-id="footerTraining" tracking-category="NavFooter">Live Training</a></li>
+<li><a href="https://zoom.us/feed">Feedback</a></li>
+<li><a href="https://zoom.us/contact">Contact Us</a></li>
+<li><a href="https://zoom.us/accessibility">Accessibility</a></li>
+<li><a href="/docs/en-us/privacy-and-security.html">Privacy and Security</a></li>
+</ul>
+</div>
+<div class="cm-language">
+<div class="h4" role="heading" aria-level="2"><span style="color:#eaeaea;">Language</span></div>
+<ul class="clearfix">
+<li>
+<div class="dropdown-language dropdown" role="presentation">
+<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-haspopup="true">
+<span>English</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu pull-right">
+<li class="active"><a href="javascript:;" data-locale="en-US">English</a></li>
+<li class=""><a href="javascript:;" data-locale="es-ES">Español</a></li>
+<li class=""><a href="javascript:;" data-locale="de-DE">Deutsch</a></li>
+<li class=""><a href="javascript:;" data-locale="zh-CN">简体中文</a></li>
+<li class=""><a href="javascript:;" data-locale="zh-TW">繁體中文</a></li>
+<li class=""><a href="javascript:;" data-locale="fr-FR">Français</a></li>
+<li class=""><a href="javascript:;" data-locale="pt-PT">Portuguese</a></li>
+<li class=""><a href="javascript:;" data-locale="jp-JP">日本語</a></li>
+<li class=""><a href="javascript:;" data-locale="ru-RU">Русский</a></li>
+<li class=""><a href="javascript:;" data-locale="ko-KO">한국어</a></li>
+<li class=""><a href="javascript:;" data-locale="it-IT">Italiano</a></li>
+<li class=""><a href="javascript:;" data-locale="vi-VN">Tiếng Việt</a></li>
+</ul>
+</div>
+</li>
+</ul>
+<input type="hidden" id="cookie_currency" value="USD" />
+<div class="h4" role="heading" aria-level="2"><span style="color:#eaeaea;">Currency</span></div>
+<ul class="clearfix">
+<li>
+<div class="dropdown-currency dropdown" role="presentation">
+<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-haspopup="true">
+<span>US Dollars $</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu pull-right">
+<li class="active"><a href="javascript:;" data-currency="USD">US Dollars $</a></li>
+<li class=""><a href="javascript:;" data-currency="AUD">Australian Dollars $</a></li>
+<li class=""><a href="javascript:;" data-currency="EUR">Euros €</a></li>
+<li class=""><a href="javascript:;" data-currency="GBP">British Pounds £</a></li>
+<li class=""><a href="javascript:;" data-currency="JPY">Japanese Yen ￥</a></li>
+<li class=""><a href="javascript:;" data-currency="CAD">Canadian Dollars $</a></li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="info-icons">
+<a href="https://blog.zoom.us/" class="icon" target="_blank" tracking-id="footerBlogIcon" tracking-category="NavFooter">
+<span class="sr-only">Zoom on Blog</span>
+<span class="wordpress"></span>
+</a>
+<a href="http://www.linkedin.com/company/2532259" class="icon" target="_blank">
+<span class="sr-only">Zoom on LinkedIn</span>
+<span class="linkedin"></span>
+</a>
+<a href="http://www.twitter.com/zoom_us" class="icon" target="_blank">
+<span class="sr-only">Zoom on Twitter</span>
+<span class="twitter"></span>
+</a>
+<a href="http://www.youtube.com/zoommeetings" class="icon" target="_blank">
+<span class="sr-only">Zoom on Youtube</span>
+<span class="youtube-play"></span>
+</a>
+<a href="http://www.facebook.com/zoomvideocommunications" class="icon" target="_blank">
+<span class="sr-only">Zoom on Facebook</span>
+<span class="facebook"></span>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="info">
+Copyright &copy;2020 Zoom Video Communications, Inc. All rights reserved. <a href="https://zoom.us/legal">Privacy & Legal Policies</a>
+<a href="https://zoom.us/privacy">About Ads</a>
+<a id="teconsent" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="position: relative;min-height: 80px;" id="stopgap-warpper">
+<div id="consent_blackbar" style="position:fixed; bottom: 0;width: 100%;z-index: 1000;">
+</div>
+</div>
+</div>
+<div id="fb-root"></div>
+<input type="hidden" id="__platformCheck" value="os" />
+<div id="notification"></div>
+<input type="hidden" id="detect" value="https://d24cgw3uvb9a9h.cloudfront.net/cdn-detect.png"/>
+<script>
+ready(function () {
+var isCDNblocked = readCookie("_zm_cdn_blocked");
+var blk = "unlog_blk";
+var unblk = "unlog_unblk";
+if (isCDNblocked === null || (isCDNblocked !== blk && isCDNblocked !== unblk)) {
+var image = new Image();
+delCookie("_zm_cdn_blocked");
+var timer = setTimeout(function () {
+image.onload = null;
+createCookie("_zm_cdn_blocked", blk, 0.25);
+window.location.reload(true);
+}, 10000);
+image.onload = function () {
+clearTimeout(timer);
+createCookie("_zm_cdn_blocked", unblk, 0.25);
+};
+image.onerror = function () {
+clearTimeout(timer);
+createCookie("_zm_cdn_blocked", blk, 0.25);
+window.location.reload(true);
+};
+var url = document.getElementById("detect").value;
+image.src = url;
+}
+});
+function ready(callback) {
+if (document.readyState !== 'loading') callback();
+else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+else document.attachEvent('onreadystatechange', function () {
+if (document.readyState === 'complete') callback();
+});
+}
+function createCookie(name, value, days) {
+if (days) {
+var date = new Date();
+date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+var expires = "; expires=" + date.toUTCString();
+}
+else var expires = "";
+document.cookie = name + "=" + value + expires + "; path=/; secure=true; domain=" + ".zoom.us";
+}
+function readCookie(name) {
+var equal = name + "=";
+var ca = document.cookie.split(';');
+for (var i = 0; i < ca.length; i++) {
+var c = ca[i];
+while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+if (c.indexOf(equal) == 0) return c.substring(equal.length, c.length);
+}
+return null;
+}
+function delCookie(name) {
+createCookie(name,"",-1);
+}
+</script>
+<style type="text/css">
+@media screen and (max-width: 767px) {
+.navbar-signup-header .navbar-header {
+display: block;
+float: left;
+border: none;
+}
+.navbar-signup-header .collapse {
+display: block;
+}
+#header_container .container > .navbar-collapse {
+background-color: #fff;
+border: none;
+}
+#header_outer .navbar-signup-header .navbar-collapse .navbar-right {
+float: right;
+margin-top: 4px;
+}
+}
+</style>
+<script>
+var isFreeAccount = true;
+var SB = {
+version: '4.0.93994.0613.ec7e7346',
+contextPath: '',
+baseUrl: 'https://zoom.us',
+baseStaticUrl: 'https://d24cgw3uvb9a9h.cloudfront.net/static/93994',
+loggedIn: false,
+fbLoggedIn: false,
+fbAppkey: '113289095462482',
+fbAppPage: 'https://apps.facebook.com/zoomvideocall/',
+fbScope: 'email,public_profile',
+pardotPaymentUrl : 'https://go.pardot.com/l/84442/2015-07-23/mw5t',
+pardotBuyUrl : 'https://go.pardot.com/l/84442/2015-07-14/4xht',
+pardotSubscriptionUrl : 'https://go.pardot.com/l/84442/2015-07-23/mv5y',
+pardotActivateUserUrl : 'https://go.pardot.com/l/84442/2015-10-23/mspcv',
+noSignup: 'false',
+languagePref: 'en-US',
+isGDPRCountry: false
+};
+</script>
+<script src="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/js/all.min.js"></script>
+<script src="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/js/lib/vue/vue.min.js"></script>
+<script src="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/js/lib/vue/zoom-components.min.js"></script>
+<script>
+$.i18n.load({
+"common.btn_close": "Close",
+"common.btn_yes": "Yes",
+"common.btn_no": "No",
+"common.title.prompt": "Prompt",
+"common.title.confirmation": "Confirmation",
+"common.unknown_error": "Unknown Error!",
+"common.error": "Error",
+"common.enter_time_in_12_hour": "Please enter a valid time in 12-hour",
+"common.tips": "Tips, press Enter to expand",
+"jquery.validation_required":"This field is required.",
+"jquery.validation_remote":"Please fix this field.",
+"jquery.validation_email":"Please enter a valid email address.",
+"jquery.validation_url":"Please enter a valid URL.",
+"jquery.validation_date":"Please enter a valid date.",
+"jquery.validation_dateISO":"Please enter a valid date (ISO).",
+"jquery.validation_number":"Please enter a valid number.",
+"jquery.validation_digits":"Please enter only digits.",
+"jquery.validation_creditcard":"Please enter a valid credit card number.",
+"jquery.validation_equalTo":"Please enter the same value again.",
+"jquery.validation_maxlength":"Please enter no more than {0} characters.",
+"jquery.validation_minlength":"Please enter at least {0} characters.",
+"jquery.validation_rangelength":"Please enter a value between {0} and {1} characters long.",
+"jquery.validation_range":"Please enter a value between {0} and {1}.",
+"jquery.validation_max":"Please enter a value less than or equal to {0}.",
+"jquery.validation_min":"Please enter a value greater than or equal to {0}.",
+"billing.pastdue.notice":"Past Due Notice",
+"billing.pastdue.balance_new":"Your account has an outstanding balance of {0}{1} due.",
+"billing.pastdue.terminate_time":"Your account type will change to a Basic plan on {0}, if the balance is not paid.",
+"billing.pastdue.terminate_soon":"Your account type will change to a Basic plan very soon, if the balance is not paid.",
+"billing.pastdue.this_means":"This means that you will lose many of the features you currently have.",
+"billing.pastdue.pay_online":"Please <a href=\"/billing/report\" onClick=\"ga('send', 'event', 'billing', 'click-pastdue-paynow-link', 'Past Due Notification Pay Now Link');\">click here</a> to pay online or call us at 1.888.799.9666 right away to avoid disruption to your service.",
+"billing.pastdue.contact_sales":"Please <a href=\"/contactsales\" target=\"_blank\">contact sales</a> or call us at 1.888.799.9666 right away to avoid disruption to your service.",
+"meeting.upcoming_meetings":"Upcoming Meetings",
+"meeting.current.start_this_meeting":"Would you like to start this meeting?",
+"meeting.current.start_these_meetings":"Would you like to start one of these meetings?",
+"meeting.current.view_more":"View more...",
+"meeting.current.start_new_meeting":"Start a New Meeting",
+"meeting.password.opt_out_acceptChange_success":"Passwords will be enabled by default on {0} for your account.",
+"meeting.password.opt_out_success":"Passwords will not be enabled by default for your account.",
+"meeting.opt_out_desc.zr_upgrade1":"Passwords will be enabled by default on {0} for your account.",
+"meeting.opt_out_desc.zr_upgrade2":"We recommend upgrading your <a href=\"/location\">Zoom Rooms and Zoom Rooms Controller</a> to the latest version for an optimal join experience",
+"meeting.password.opt_out_notice_title":"Important Update",
+"meeting.password.opt_out_notice":"Zoom will update your account settings to turn on passwords by default for meetings and webinars on {0}. <a href=\"javascript:void(0)\" onclick=\"showMeetingPassWordOptOut()\">Click</a> here to learn more or if you wish to opt out of this change."
+});
+</script>
+<script src="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/js/app/jquery.validate.message.min.js"></script>
+<script src="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/js/app/user/login.min.js"></script>
+<script type="text/javascript" src="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/js/app/support/new_captcha.min.js"></script>
+<script type="text/javascript">
+$.i18n.load({
+"user.common.email_required":"Please enter your email address",
+"user.common.email_invalid":"Your email address must be in the format of name@domain.com",
+"user.common.email_phone_invalid": "Please enter a valid phone number or email address",
+"captcha.required": "Please enter captcha code",
+"user.login.enter_password": "Please enter your password",
+"user.login.enable_browser_cookie" :"Your browser's cookie functionality is disabled. Please enable it.",
+"user.login.with_work_mail" :"Please login with your work email <strong>{0}</strong>",
+"user.login.with_gmail":"Please login with your google account <strong>{0}</strong>",
+"user.login.with_facebook" :"Please login with your facebook account <strong>{0}</strong>",
+"user.send_detail_success" : "We have sent an email to {0}. Please check your inbox for more information and next steps.",
+"error.user.login_failure" : "Wrong user name or password. Try signing in again.",
+"error.user.login_failure_tip" : "Incorrect email or password. Enter your sign in information again, or <a id=\"sendDetailMailId\" href=\"javascript:;\">request an email</a> to gain access to your account.",
+"error.user.login_phone_failure_tip": "Incorrect email/phone number or password. Enter your sign in information again, or <a href=\"/\">Sign in with SMS</a>.",
+"error.user.login_failure_not_activate" : "Your Zoom account has not been activated. Find the activation email in your email box or <a id=\"sendDetailMailId\" href=\"javascript:;\">request a new email</a> for activation.",
+"error.account.work_email_login_disabled" : "Unable to sign into your account. Please try the other listed methods."
+});
+$.cookie('existEmail',null);
+$.cookie('errorCode',null);
+var signinNeedCaptcha = false;
+signinNeedCaptcha = true;
+</script>
+<!--[if gt IE 8]><!-->
+<style>
+.ada-embed-drawer__iframe-container{
+max-height: 550px !important;
+max-width: 330px !important;
+margin: 10px 10px 10px 10px !important;
+}
+</style>
+
+<script async id="__ada" data-handle="zoom" src="https://static.ada.support/embed.js"></script>
+<script async id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f022518e-a528-43eb-b7d9-6af79e1de3db"> </script>
+<!--<![endif]-->
+<div id="upcomingMeetingDialog" class="modaldialog hideme upcomingMeeting-feature-dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+<h4 tabindex="-1" id="upcoming-meeting-title" class="meeting-delete-header-font" style="display: inline-block;">Upcoming Meetings</h4>
+</div>
+<div class="modal-body">
+<div class="form-group" style="margin-bottom:16px;">
+<div id="one-mtg" class="controls hideme" style="margin-bottom:18px;">Would you like to start this meeting?</div>
+<div id="more-mtg" class="controls hideme" style="margin-bottom:18px;">Would you like to start one of these meetings?</div>
+<div id="mtgs">
+</div>
+<div id="viwe-more" class="controls hideme"><a href="/meeting">View more...</a></div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary submit" id="scheduleMtg" style="background-color: #fff;color: #232333;border-color: #747487">Start a New Meeting</button>
+</div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/css/meetings/meeting_delete_dialog.min.css" />
+
+</div>
+<script src="https://d24cgw3uvb9a9h.cloudfront.net/static/93994/js/lib/vue/advanced/notification/notification.min.js"></script>
+<style type="text/css">
+.optout-notice-wrapper {
+width: 100%;
+display: none;
+position: relative;
+}
+.optout-notice-container {
+padding: 24px 48px 24px 24px;
+}
+.meeting-disabledpmi-alert{
+min-width:415px;
+}
+.meeting-edit-disabledpmi-alert{
+min-width:553px;
+}
+.meeting-edit-disabledpmi-alert p,.meeting-disabledpmi-alert p{
+line-height: inherit;
+}
+@media only screen and (max-width: 414px) {
+.optout-notice-container {
+padding: 10px 20px;
+}
+}
+.optout-notice-container div {
+display: inline-block;
+}
+.optout-notice-title {
+font-weight: bold;
+line-height: 150%;
+}
+.optout-notice-medium {
+background-color: #FCF6ED;
+color: #775111;
+}
+.optout-notice-low {
+background-color: #E4F7EB;
+color: #1C7E41;
+}
+.optout-notice-high {
+background-color: #FFE8E8;
+color: #B22424;
+}
+.optout-notice-container a {
+color: #0065F2;
+font-weight: bold;
+text-decoration: none;
+}
+.optout-notice-content {
+padding-right: 24px;
+}
+.optout-notice-close {
+position: absolute;
+top: 10px;
+right: 23px;
+font-size: 30px;
+color: #232333;
+cursor: pointer;
+border: none;
+background: transparent;
+}
+.optout-notice-close:before {
+content: '\00d7';
+}
+#content_container.content_container_hide_header{
+padding-top:0px;
+}
+.body_hide_footer{
+background: #fff;
+}
+</style>
+</body>
+</html>
