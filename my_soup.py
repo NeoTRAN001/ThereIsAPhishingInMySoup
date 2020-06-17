@@ -1,6 +1,6 @@
 import click
 import subprocess
-from scripts import props
+from scripts import props, manage_data
 
 @click.command()
 @click.option("--template", '-t', default="None" , 
@@ -15,7 +15,7 @@ def main(template, password, info):
         subprocess.call(['python3', './server.py', '-t', template, '-p', "8080"])
 
     elif (password):
-        print("In construction")
+        manage_data .read_data()
 
     elif (info):
         print(props.INFO)
