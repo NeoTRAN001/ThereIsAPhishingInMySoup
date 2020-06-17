@@ -21,7 +21,7 @@
 
 <p align="center">
 <a href="https://github.com/NeoTRAN001">
-<img src="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup/blob/master/Data/img/show.gif"/>
+<img src="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup/blob/master/Data/img/mySoup.gif"/>
 </a>
 </p>
 
