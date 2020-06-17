@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="l/QlbGgKmkmJ+Ir0jRK6EM/hfz/ywcykjnHZpISx5ergdcWr/D1eYTY5LHFhsdMMiEB4UuzWZ3vvgCDcu9vpvw==" />
+<title>CodePen Login</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-14efd1e602238c2f96d1f461d3b6fee7ebdee50b9c8b7fd8f86fa248732991c5.css" />
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/everypage-5696f5cd.css" />
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/page/page-70aadc20a7ffd71654619af505e753acda882b1843633107a455a4786dacf3cd.css" />
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/accounts/signup-7a8fc4608488d9451ca7c97beae56594c3f9564bb6dedd14b1fe9ba09fd8009d.css" />
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/accounts/form-62464dc23571af11f63e1e830c53af671518aecadd257fb643e2ce1803c8e7f8.css" />
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<script>/* Firefox needs this to prevent FOUC. */</script>
+</head>
+<body class="body-login
+    logged-out
+
+
+    not-team
+">
+<header id="main-sidebar" class="main-sidebar">
+</header>
+<div id="react-search-and-user-menu"></div>
+<div class="login-wrap">
+<header class="login-header">
+<h1 class="login-logo">CodePen Login</h1>
+<h2 class="little-big-header">Log In!</h2>
+</header>
+<div class="flex-grid">
+<div class="login-half left">
+<div class="login-area">
+<form class="login-form top-label-form" id="login-login-form" action="/login" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="7vbsWhghiSp6QNiKNgiNHpcSxcYiaDXaTmjj7xYV6/NOpUa0XrRf1wt/4EVa0zYvABV9l8mvl02n8Icbec4urQ==" />
+<div id="login-email" class="field">
+<label for="login-email-field">Username or Email</label>
+<input type="text" name="email" id="login-email-field" value="" required="required" />
+</div>
+<div id="login-password" class="field">
+<label for="login-password-field">Password</label>
+<input name="password" required="required" type="password" id="login-password-field_" />
+</div>
+<div>
+<input type="hidden" id="login-type" name="login-type" value="fullpage">
+</div>
+<div id="login-error"></div>
+<div>
+<button id="log-in-button" class="recaptcha-trigger-button button green action-button expand-right">
+<span class="label">Log In</span>
+<span class="spinner"></span>
+</button>
+&nbsp;&nbsp;
+<a href="#" id="forgot-password-link" class="forgot-password-link">
+Forgot Password?
+</a>
+</div>
+</form>
+<form class="module login-form top-label-form" id="forgot-password-form" action="#0">
+<h3>Reset Your Password</h3>
+<div class="field">
+<label for="forgot-email">Username Or Email</label>
+<input type="text" id="forgot-email" name="forgot-email" placeholder="your@email.com" required>
+</div>
+<div class="field">
+<input id="forgot-email-btn" type="submit" value="Send Password Reset Email" class="button button-medium">
+</div>
+<div id="sent-message">
+<div id="sent-message-message"></div>
+</div>
+</form>
+</div>
+</div>
+<div class="login-divider">
+<div class="bar bar-top"></div>
+<span class="login-or">OR</span>
+<div class="bar bar-bottom"></div>
+</div>
+<div class="login-half right">
+<div class="module social-auth-errors" id="login-social-auth-errors"></div>
+<div class="login-social-buttons">
+<a id="login-with-twitter" href="/" data-network="Twitter" class="button social-account-button twitter-button button-fullwidth">
+<svg class="icon-twitter" width="26" height="26">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://codepen.io/svg_sprite?v=bbd832a9#twitter"></use>
+</svg>
+<span>Log In with Twitter</span>
+</a>
+<a id="login-with-github" href="/" data-network="Github" class="button github-button social-account-button button-fullwidth">
+<svg class="icon-github" width="26" height="26">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://codepen.io/svg_sprite?v=bbd832a9#octocat"></use>
+</svg>
+<span>Log In with GitHub</span>
+</a>
+<a id="login-with-facebook" href="/" data-network="Facebook" class="button social-account-button facebook-button button-fullwidth">
+<svg class="icon-facebook" width="26" height="26">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://codepen.io/svg_sprite?v=bbd832a9#facebook"></use>
+</svg>
+<span>Log In with Facebook</span>
+</a>
+</div>
+</div>
+</div>
+<div class="signup-callout">
+Need an account? <a href="/accounts/signup/user/free">Sign up now!</a>
+</div>
+</div>
+<div id="popup-overlay" class="overlay popup-overlay"></div>
+<div id="modal-overlay" class="overlay modal-overlay"></div>
+</body>
+</html>
