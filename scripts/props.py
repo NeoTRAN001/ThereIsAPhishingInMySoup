@@ -1,3 +1,5 @@
+from datetime import date
+
 BANNER = """
                .--.     \033[0;38;5;172m╔╦╗┬ ┬┌─┐┬─┐┌─┐  ┬┌─┐\033[0m
              _/__  )     \033[89m║ ├─┤├┤ ├┬┘├┤   │└─┐  \033[0m
@@ -93,3 +95,7 @@ def show_data(email, password):
 
             \033[0;38;5;112m******************************************************\033[0m 
         """)
+
+def get_date():
+  today = date.today() 
+  return f"{today.day}/{today.month}/{today.year}"
