@@ -13,9 +13,9 @@ BANNER = """
       ;^ ^ ^; |     /       \033[94m[02]\033[0m CodFac     \033[94m[09]\033[0m Lichess    \033[94m[16]\033[0m Github\033[0m
        \^ ^/\)|    |        \033[94m[03]\033[0m Chess      \033[94m[10]\033[0m Linkedin   \033[94m[17]\033[0;38;5;240m Udemy\033[0m
         | ^|  |    |        \033[94m[04]\033[0m Deviantart \033[94m[11]\033[0m Netflix    \033[94m[18]\033[0m Steam
-       /'-'\  \_   |        \033[94m[05]\033[0;38;5;240m EpicGames  \033[94m[12]\033[0m Outlook    \033[94m[19]\033[0m Discord
-      / ..  |  |'- |        \033[94m[06]\033[0;38;5;240m Facebook   \033[94m[13]\033[0m Platzi     \033[94m[20]\033[0;38;5;240m Yahoo\033[0m
-      |/  `\|  |   |        \033[94m[07]\033[0;38;5;240m Gmail      \033[94m[14]\033[0m Reddit     \033[94m[21]\033[0m Zoom
+       /'-'\  \_   |        \033[94m[05]\033[0m Shodan     \033[94m[12]\033[0m Outlook    \033[94m[19]\033[0m Discord
+      / ..  |  |'- |        \033[94m[06]\033[0m Facebook   \033[94m[13]\033[0m Platzi     \033[94m[20]\033[0m Yahoo
+      |/  `\|  |   |        \033[94m[07]\033[0m Google     \033[94m[14]\033[0m Reddit     \033[94m[21]\033[0m Zoom
                |   |
               _|,__|        
              (_/  .'   \033[0;38;5;160mDisclaimer: The tool is for educational purposes,\033[0m
@@ -54,7 +54,7 @@ INFO = """
 
 """
 
-OPTIONS = ['Help','Amino', 'CodFac', 'Chess', 'Deviantart', 'EpicGames', 'Facebook', 'Gmail',
+OPTIONS = ['Help','Amino', 'CodFac', 'Chess', 'Deviantart', 'Shodan', 'Facebook', 'Google',
           'Instagram', 'Lichess', 'Linkedin', 'Netflix', 'Outlook', 'Platzi', 'Reddit'
           ,'Twitter', 'Github', 'Udemy', 'Steam', 'Discord', 'Yahoo', 'Zoom']
 
