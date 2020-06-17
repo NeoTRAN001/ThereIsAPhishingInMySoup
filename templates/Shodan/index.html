@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shodan - Account Management</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://wire.shodan.io/v2.1.1/default/css/wire.css" rel="stylesheet" />
+<link rel="shortcut icon" href="https://static.shodan.io/shodan/img/favicon.png" type="image/x-icon">
+<style>.social h1 {
+    color: white !important;
+}
+</style>
+</head>
+<body>
+<div class="quickbar">
+<ul>
+<li><a href="https://www.shodan.io">Shodan</a>
+</li>
+<li><a href="https://developer.shodan.io">Developer</a>
+</li>
+<li><a href="https://leanpub.com/shodan">Book</a>
+</li>
+<li><a href="https://www.shodan.io/about/products">More...</a>
+</li>
+</ul>
+<div class="u-cf"></div>
+</div>
+<div class="navbar">
+<ul>
+<li><a href="/" class="title"><img src="https://static.shodan.io/shodan-ds/img/logo.png" alt="Shodan"><span>Account</span></a>
+</li>
+<li><a href="https://account.shodan.io/register" class="highlight">Register</a>
+</li>
+</ul>
+<div class="u-cf"></div>
+</div><br><br>
+<div class="small-container">
+<div class="container">
+<div class="row card login">
+<div class="two-thirds column">
+<h1>Login with <em>Shodan</em></h1>
+<form method="post" action="/">
+<div class="group">
+<input type="text" name="email" required="required" id="username" autofocus="autofocus" /><span class="bar"></span>
+<label for="username">Username</label>
+</div>
+<div class="group">
+<input type="password" name="password" required="required" id="password" /><span class="bar"></span>
+<label for="password">Password</label>
+</div>
+<div class="u-center">
+<input type="submit" value="Login" name="login_submit" class="button button-primary" />
+</div>
+</form>
+<div class="u-pull-right"><a href="/recover" class="light">Forgot Password?</a>
+</div>
+</div>
+<div class="one-third column column-highlight social">
+<h1>Login with</h1><a href="/login/google_oidc"><i class="fab fa-google"></i><span>Google</span></a><a href="/login/twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a><a href="/login/live"><i class="fab fa-microsoft"></i><span>Windows Live</span></a><a href="/login/facebook"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="small-container">
+<div class="container"><br><br><br>
+<p class="light u-center">Shodan<sup>&reg;</sup>
+</p>
+</div>
+</div>
+<script defer src="https://static.shodan.io/font-awesome-pro/js/fontawesome-account.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
