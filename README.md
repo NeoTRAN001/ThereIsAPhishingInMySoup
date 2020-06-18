@@ -1,6 +1,6 @@
 <p align=center>
 
-  <img src="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup/blob/master/Data/img/logo.png"/>
+  
 
   <br>
   <span>There is a phishing in my soup, it is a scam tool with <a href="https://github.com/NeoTRAN001/ThereIsAPhishingInMySoup">phishing</a></span>
