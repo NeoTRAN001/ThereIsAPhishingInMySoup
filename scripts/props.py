@@ -56,7 +56,7 @@ INFO = """
 
 """
 
-OPTIONS = ['Help','Amino', 'CodFac', 'Chess', 'Deviantart', 'Shodan', 'Facebook', 'Google',
+OPTIONS = ['Test','Amino', 'CodFac', 'Chess', 'Deviantart', 'Shodan', 'Facebook', 'Google',
           'Instagram', 'Lichess', 'Linkedin', 'Netflix', 'Outlook', 'Platzi', 'Reddit'
           ,'Twitter', 'Github', 'Codepen', 'Steam', 'Discord', 'Yahoo', 'Zoom']
 
