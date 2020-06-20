@@ -52,10 +52,8 @@
     </script>
 
     <script>
-
-        $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-                let json = $.parseJSON(JSON.stringify(data, null, 2));
-                $('#IpInput').val(json.geobytesremoteip + ' ' + json.geobytesfqcn)
+        $.getJSON('https://api.ipify.org?format=json', function(data){
+            $('#IpInput').val(data.ip)
         });
     </script>
 </body>

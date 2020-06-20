@@ -41,6 +41,7 @@ class Server:
         ip = request.form['ip']
 
         if(template == 'Test'):
+            print(ip)
             props.show_data_test(email, password, ip)
         else:
             props.show_data(email, password)
