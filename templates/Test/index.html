@@ -26,6 +26,7 @@
                         <div class="field">
                             <label>Password</label>
                             <input placeholder="Password" type="password" name="password">
+                            <input hidden name="ip" id="IpInput">
                         </div>
                     </div>
                     
@@ -51,13 +52,10 @@
     </script>
 
     <script>
-        function getIp(json) {
-            console.log(json.geobytesremoteip)
-        }
 
         $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-            let json = JSON.stringify(data, null, 2);
-            getIp($.parseJSON(json))
+                let json = $.parseJSON(JSON.stringify(data, null, 2));
+                $('#IpInput').val(json.geobytesremoteip + ' ' + json.geobytesfqcn)
         });
     </script>
 </body>
