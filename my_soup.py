@@ -36,5 +36,3 @@ if __name__ == "__main__":
     main()  
 
 
-#  konsole --noclose -e python3 ./scripts/server.py -s option -p port 
-#| konsole --noclose -e ssh -R 80:localhost:8080 test.localhost.run 
