@@ -86,7 +86,7 @@ def localhost_run():
   
   return False
 
-def show_data(email, password, ip):
+def show_data(email, password):
   print(f"""
             \033[0;38;5;112m************************ Data ************************
             
